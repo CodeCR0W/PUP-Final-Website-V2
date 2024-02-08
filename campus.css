@@ -1,0 +1,406 @@
+html, body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 300vh;
+    width: 100%;
+    display: table;
+    overflow-x:hidden;
+}
+.red-line {
+    background-color: #800000;
+    width: 100%;
+    height: 6px;
+    margin: 0;
+}
+
+/* ------ Navbar ------ */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+body.sticky-nav {
+    padding-top: 70px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    text-decoration: none;
+}
+.logo-info {
+    margin-left: 10px;
+}
+.navbar-menu {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-right: 50px;
+    padding: 0;
+}
+.navbar-logo {
+    margin: 0;
+    height: 70px;
+}
+.navbar-university {
+    font-size: 18px;
+    font-family: Cinzel,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    color: #800000;
+    margin-bottom: 0px;
+}
+.navbar-branch {
+    font-size: 18px;
+    font-family: Cinzel,Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: smaller;
+    color: dimgray;
+    margin-top: 0px;
+}
+.navbar-university, .navbar-branch {
+    transition: color 0.1s;
+}
+.logo-container:hover .navbar-university, .logo-container:hover .navbar-branch {
+    color: #c00000;
+    cursor: pointer;
+}
+.navbar-text {
+    display: inline-block;
+    color: #800000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    font-family: Assistant,Arial,Helvetica,sans-serif;;
+    font-weight: 500;
+}
+.navbar-line {
+    height: 2px;
+    background-color: #800000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    margin: 0;
+}
+
+
+
+
+/* ------ Faculty Gallery ------ */
+.faculty-container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.faculty-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.faculty {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(50% - 10px);
+    max-width: 400px;
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.faculty:hover {
+    transform: translateY(-8px) scale(1.02);
+    cursor: pointer;
+}
+
+.faculty-images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.faculty-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    flex: 1;
+    object-fit: cover;
+}
+
+.faculty-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(180, 48, 48, 0.8);
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0 0 10px 10px;
+}
+.faculty:hover .faculty-info {
+    opacity: 1;
+}
+
+.faculty h2 {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-family: Cinzel,Arial,Helvetica,sans-serif;
+    font-weight: 500;
+}
+
+.faculty p {
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-family: "Assistant", sans-serif;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 18px;
+}
+
+
+/* ------ Footer ------ */
+.footer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: Assistant;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.footer-container {
+    list-style: none;
+    color: white;
+}
+.footer-top {
+    color: #800000;
+    background-color: #f5f5f5;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.line1 {
+    background-color: #800000;
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 40px;
+}
+.footer-logo {
+    max-width: 150px;
+}
+.footer-university {
+    font-size: 20px;
+    font-family: Cinzel,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    color: #800000;
+    margin: 0;
+}
+.footer-branch {
+    font-size: 16px;
+    font-family: Cinzel,Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    color: dimgray;
+    margin-top: 0px;
+}
+.ql-text {
+    font-family: Cinzel,Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #800000; 
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.quick-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    
+}
+.ql-link {
+    font-family: Assistant;
+    font-weight: 500;
+    color: #310000;
+    text-decoration: none;
+    font-size: 16px;
+}
+.quick-links li {
+    margin-bottom: 20px;
+}
+
+.footer-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
+}
+.location {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+.location-icon {
+    max-width: 20px;
+    max-height: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.address {
+    align-items: center;
+    vertical-align: middle;
+}
+.contact-icon {
+    max-width: 20px;
+    max-height: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.phone-num, .telephone-num {
+    display: inline-flex;
+    vertical-align: middle;
+}
+.footer-socials {
+    display: block;
+    margin-top: 30px;
+}
+.footer-socials a {
+    text-decoration: none;
+}
+.facebook, .twitter, .instagram, .youtube {
+    max-width: 40px;
+    max-height: 40px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.facebook:hover, .twitter:hover, .instagram:hover, .youtube:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.footer-bottom {
+    display: flex;
+    color: white;
+    background-color: #310000;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.line2 {
+    background-color: rgba(255, 255, 255, 0.767);
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-link-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.copyright {
+    color: white;
+    opacity: 0.7;
+    margin-left: auto;
+}
+@media only screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .logo-container {
+        margin-bottom: 20px;
+    }
+    .navbar-menu {
+        margin-top: 20px;
+    }
+    .navbar-text {
+        padding: 15px;
+    }
+
+    .faculty {
+        width: 100%;
+        max-width: none;
+    }
+    .faculty-info {
+        padding: 15px;
+    }
+
+    .footer-top {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-logo-info {
+        margin-bottom: 20px;
+    }
+    .footer-info-container {
+        margin-left: 0;
+    }
+    .quick-links {
+        margin-top: 20px;
+    }
+    .location, .contact-numbers {
+        margin-top: 20px;
+    }
+    .footer-social-container {
+        margin-top: 20px;
+    }
+}

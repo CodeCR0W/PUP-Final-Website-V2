@@ -1,0 +1,474 @@
+html, body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    display: table;
+    overflow-x:hidden;
+}
+.red-line {
+    background-color: #800000;
+    width: 100%;
+    height: 6px;
+    margin: 0;
+}
+
+/* ------ Navbar ------ */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+body.sticky-nav {
+    padding-top: 70px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    text-decoration: none;
+}
+.logo-info {
+    margin-left: 10px;
+}
+.navbar-menu {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-right: 50px;
+    padding: 0;
+}
+.navbar-logo {
+    margin: 0;
+    height: 70px;
+}
+.navbar-university {
+    font-size: 18px;
+    font-family: Cinzel,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    color: #800000;
+    margin-bottom: 0px;
+}
+.navbar-branch {
+    font-size: 18px;
+    font-family: Cinzel,Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: smaller;
+    color: dimgray;
+    margin-top: 0px;
+}
+.navbar-university, .navbar-branch {
+    transition: color 0.1s;
+}
+.logo-container:hover .navbar-university, .logo-container:hover .navbar-branch {
+    color: #c00000;
+    cursor: pointer;
+}
+.navbar-text {
+    display: inline-block;
+    color: #800000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    font-family: Assistant,Arial,Helvetica,sans-serif;;
+    font-weight: 500;
+}
+.navbar-line {
+    height: 2px;
+    background-color: #800000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    margin: 0;
+}
+
+
+/* ------ Admission ------ */
+.admission-section {
+    background-color: #f5f5f5;
+    padding-top: 20px;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.admission-header-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.admission-header-container h1 {
+    font-size: 2.5rem;
+    color: #800000;
+    margin-bottom: 20px;
+}
+
+.admission-header-container p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.admission-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.admission-form {
+    margin-top: 30px;
+    text-align: left;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.admission-form label {
+    display: block;
+    margin-bottom: 8px; /* Adjusted margin for better spacing */
+    font-weight: bold;
+    color: #333;
+}
+
+.admission-form input[type="text"],
+.admission-form input[type="email"],
+.admission-form input[type="tel"],
+.admission-form select,
+.admission-form textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding for better input field size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem; /* Using rem for font size */
+}
+
+.admission-form textarea {
+    resize: vertical;
+    min-height: 120px; /* Adjusted min-height for better textarea size */
+}
+
+.admission-form button {
+    background-color: #800000;
+    color: white;
+    padding: 12px 24px; /* Increased padding for better button size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem; /* Using rem for font size */
+}
+.admission-form button:hover {
+    background-color: #c00000;
+}
+
+.gwa-input {
+    margin-bottom: 20px; /* Adjust margin for better spacing */
+}
+
+.gwa-input label {
+    color: #333; /* Set label color */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.gwa-input input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.gwa-input input[type="number"]:focus {
+    border-color: #800000; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.gwa-input input[type="number"]::-webkit-inner-spin-button,
+.gwa-input input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove spin buttons on webkit browsers */
+    appearance: none; /* Remove spin buttons on other browsers */
+    margin: 0; /* Remove default margin */
+}
+
+/* ------ Footer ------ */
+.footer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: Assistant;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.footer-container {
+    list-style: none;
+    color: white;
+}
+.footer-top {
+    color: #800000;
+    background-color: #f5f5f5;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.line1 {
+    background-color: #800000;
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 40px;
+}
+.footer-logo {
+    max-width: 150px;
+}
+.footer-university {
+    font-size: 20px;
+    font-family: Cinzel,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    color: #800000;
+    margin: 0;
+}
+.footer-branch {
+    font-size: 16px;
+    font-family: Cinzel,Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    color: dimgray;
+    margin-top: 0px;
+}
+.ql-text {
+    font-family: Cinzel,Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #800000; 
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.quick-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    
+}
+.ql-link {
+    font-family: Assistant;
+    font-weight: 500;
+    color: #310000;
+    text-decoration: none;
+    font-size: 16px;
+}
+.quick-links li {
+    margin-bottom: 20px;
+}
+
+.footer-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
+}
+.location {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+.location-icon {
+    max-width: 20px;
+    max-height: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.address {
+    align-items: center;
+    vertical-align: middle;
+}
+.contact-icon {
+    max-width: 20px;
+    max-height: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.phone-num, .telephone-num {
+    display: inline-flex;
+    vertical-align: middle;
+}
+.footer-socials {
+    display: block;
+    margin-top: 30px;
+}
+.footer-socials a {
+    text-decoration: none;
+}
+.facebook, .twitter, .instagram, .youtube {
+    max-width: 40px;
+    max-height: 40px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.facebook:hover, .twitter:hover, .instagram:hover, .youtube:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.footer-bottom {
+    display: flex;
+    color: white;
+    background-color: #310000;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.line2 {
+    background-color: rgba(255, 255, 255, 0.767);
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-link-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.copyright {
+    color: white;
+    opacity: 0.7;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjust padding for admission-section */
+    .admission-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Center align text in admission-header-container */
+    .admission-header-container {
+        text-align: center;
+    }
+
+    /* Make form inputs full width */
+    .admission-form input[type="text"],
+    .admission-form input[type="email"],
+    .admission-form input[type="tel"],
+    .admission-form select,
+    .admission-form textarea,
+    .admission-form button {
+        width: 100%;
+    }
+
+    /* Adjust padding and margin for form elements */
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    /* Adjust padding for form button */
+    .admission-form button {
+        padding: 10px 20px;
+    }
+
+    /* Adjust margin for GWA input */
+    .gwa-input {
+        margin-bottom: 15px;
+    }
+
+    /* Make footer links centered */
+    .footer-bottom {
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .logo-container {
+        margin-bottom: 20px;
+    }
+    .navbar-menu {
+        margin-top: 20px;
+    }
+    .navbar-text {
+        padding: 15px;
+    }
+
+    .faculty {
+        width: 100%;
+        max-width: none;
+    }
+    .faculty-info {
+        padding: 15px;
+    }
+
+    .footer-top {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-logo-info {
+        margin-bottom: 20px;
+    }
+    .footer-info-container {
+        margin-left: 0;
+    }
+    .quick-links {
+        margin-top: 20px;
+    }
+    .location, .contact-numbers {
+        margin-top: 20px;
+    }
+    .footer-social-container {
+        margin-top: 20px;
+    }
+}

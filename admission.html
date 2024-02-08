@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admission | PUPQC</title>
+        <link rel="icon" type="image" href="images/puplogo.png">
+
+        <link rel="stylesheet" href="admission.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cinzel'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Assistant'>
+    </head>
+
+    <body>
+        <header>
+            <div class="red-line"></div>
+            <nav>
+                <div class="navbar-container">
+                    <a href="index.html" class="logo-container">
+                        <img src="images/puplogo.png" class="navbar-logo" alt="PUPQC Logo">
+                        <div class="logo-info">
+                            <p class="navbar-university">Polytechnic University of the Philippines</p>
+                            <p class="navbar-branch">Quezon City Branch</p>
+                        </div>
+                    </a>
+                    <ul class="navbar-menu">
+                        <li><a href="academics.html" class="navbar-text">Academics</a></li>
+                        <li><a href="admission.html" class="navbar-text">Admission</a></li>
+                        <li><a href="campus.html" class="navbar-text">Campus</a></li>
+                        <li><a href="about.html" class="navbar-text">About Us</a></li>
+                    </ul>
+                    <div class="navbar-line"></div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="admission-section">
+            <div class="admission-header-container">
+                <h1>Admission Form</h1>
+                <p>Every year thousands of high school graduating students seek admission to PUP through its College Entrance Test (PUPCET). For the School Year 2008-2009, the Admissions Office recorded approximately 42,000 applicants.</p>
+            </div>
+            <div class="admission-container">
+                
+                <h2>Apply Now</h2>
+                <form id="admission-form" method="post" class="admission-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Ex: John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Ex: abcdefghijk@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="09**********" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="program">Program</label>
+                        <select id="program" name="program" required>
+                            <option value="">Select Program</option>
+                            <option value="program1">Master in Information Technology</option>
+                            <option value="program2">Master in Educational Management</option>
+                            <option value="program3">Master in Public Administration</option>
+                            <option value="program4">Bachelor of Science in Information Technology (BSIT)</option>
+                            <option value="program5">Bachelor of Business Technology and Livelihood Education major in Home Economics (BBTLEDHE)</option>
+                            <option value="program6">Bachelor of Business Technology and Livelihood Education major in Information Communication and Technology (BTLEDICT)</option>
+                            <option value="program7">Bachelor of Science in Business Administration major in Human Resource Management (BSBAHRM)</option>
+                            <option value="program8">Bachelor of Science in Business Administration major in Marketing Management (BSBA-MM)</option>
+                            <option value="program9">Bachelor of Science in Entrepreneurship (BSENTREP)</option>
+                            <option value="program10">Bachelor of Public Administration major in Public Financial Management (BPAPFM)</option>
+                            <option value="program11">Diploma in Office Management Technology Medical Office Management (DOMTMOM)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="relationship">Relationship to Applicant</label>
+                        <select id="relationship" name="relationship" required>
+                            <option value="">Select Relationship</option>
+                            <option value="applicant">I am the Applicant</option>
+                            <option value="parent">Parent</option>
+                            <option value="guardian">Guardian</option>
+                            <option value="sibling">Sibling</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="academic-status">Academic Status</label>
+                        <select id="academic-status" name="academic-status" required>
+                            <option value="">Select Academic Status</option>
+                            <option value="shs-graduating">SHS Graduating Student (September 2024 or later)</option>
+                            <option value="shs-graduated">Graduated SHS (on or before August 2024)</option>
+                            <option value="high-school">Graduated High School (old curriculum)</option>
+                            <option value="als-passer">ALS Passer</option>
+                            <option value="pept-passer">PEPT Passer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="citizenship">Filipino Citizen</label>
+                        <select id="citizenship" name="citizenship" required>
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="living-philippines">Currently Living in the Philippines</label>
+                        <select id="living-philippines" name="living-philippines" required>
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group gwa-input">
+                        <label for="gwa">GWA of Senior High School</label>
+                        <input type="number" id="gwa" name="gwa" min="0" max="100" step="0.01" placeholder="Ex: 94.35">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <span class="line1"></span>
+                    <div class="footer-logo-info">
+                        <p class="footer-university">Polytechnic University of the Philippines</p>
+                        <p class="footer-branch">Quezon City Branch</p>
+                        <img src="images/puplogo.png" alt="PUPQC Logo" class="footer-logo">
+                    </div>
+
+                    <div class="quick-links">
+                        <p class="ql-text">Quick Links</p>
+                        <li><a href="academics.html" class="ql-link">Academics</a></li>
+                        <li><a href="admission.html" class="ql-link">Admission</a></li>
+                        <li><a href="campus.html" class="ql-link">Campus</a></li>
+                        <li><a href="about.html" class="ql-link">About Us</a></li>
+                    </div>
+
+                    <div class="footer-info-container">
+                        <div class="location">
+                            <img src="images/location.png" class="location-icon">
+                            <p class="address">Don Fabian, Quezon City, 1121 Metro Manila</p>
+                        </div>
+                        <div class="contact-numbers">
+                            <div>
+                                <img src="images/phone.png" class="contact-icon">
+                                <p class="phone-num">(02) 8952 7818</p>
+                            </div>
+
+                            <div>
+                                <img src="images/telephone.png" class="contact-icon">
+                                <p class="telephone-num">(632) 8287-8204</p>
+                            </div>
+                        </div>
+                        <div class="footer-social-container">
+                            <div class="footer-socials">
+                                <a href="https://www.facebook.com/ThePUPQCCampusOfficial" target="_blank">
+                                    <img src="images/facebook.png" alt="Facebook Icon" class="facebook">
+                                </a>
+                                <a href="https://twitter.com/Official_PUPQC" target="_blank">
+                                    <img src="images/x.png" alt="Twitter Icon" class="twitter">
+                                </a>
+                            </a>
+                                <a href="https://www.instagram.com/explore/locations/269827306/pupqc/" target="_blank">
+                                <img src="images/instagram.png" alt="Instagram Icon" class="instagram">
+                            </a>
+                                <a href="https://www.youtube.com/user/pupcreatv" target="_blank">
+                                <img src="images/youtube.png" alt="Youtube Icon" class="youtube">
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <span class="line2"></span>
+                    <div class="footer-link-container"> 
+                        <li><a href="about.html" class="footer-link">ABOUT US</a></li>
+                        <li><a href="https://www.pup.edu.ph/terms/" class="footer-link" target="_blank">TERMS OF SERVICE</a></li>
+                        <li><a href="https://www.pup.edu.ph/privacy/" class="footer-link" target="_blank">PRIVACY STATEMENT</a></li>
+                    </div>
+                    <span class="copyright">&copy; 2024 Polytechnic University of the Philippines Quezon City Campus. All rights reserved.</span>
+                </div>
+
+            </div>
+       </footer>   
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+       <script src="scripts.js"></script>
+    </body>
+</html>
